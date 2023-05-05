@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestLayer.ContactPageTest">
+        <methods>
+          <include name="validateCreatedUser" invocation-numbers="0 2 4 6 8"/>
+        </methods>
+      </class> <!-- TestLayer.ContactPageTest -->
+      <class name="TestLayer.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class> <!-- TestLayer.LoginPageTest -->
+      <class name="TestLayer.HomePageTest">
+        <methods>
+          <include name="validateHomePageTitle"/>
+          <include name="validateHomePageLogo"/>
+          <include name="validateHomePageUrl"/>
+          <include name="validateContactLink"/>
+          <include name="validateDealsLink"/>
+        </methods>
+      </class> <!-- TestLayer.HomePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
